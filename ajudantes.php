@@ -19,8 +19,8 @@ function traduz_prioridade($codigo)
 
 function traduz_data_para_banco($data)
 {
-  if ($data == "") {
-    return "";
+  if ($data == '') {
+    return '1970-01-01';
   }
 
   $dados = explode("-", $data);
@@ -30,7 +30,7 @@ function traduz_data_para_banco($data)
 
 function traduz_data_para_exibir($data)
 {
-  if ($data == "" or $data == "0000-00-00") {
+  if ($data == "" or $data == "1970-01-01") {
     return "";
   }
 
